@@ -6,7 +6,7 @@ First, the approach uses a sub class `IndividuallyRotatingTabBarController` to o
         return [self.selectedViewController shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
     }
 
-Second, the TabBarController's delegate (here: `AppDelegate`) forces UIKit to ask for the orientation every time another tab has been selected. This has been done by presenting and dismissing a fake modal view controller.
+Second, the TabBarController's delegate (here: `AppDelegate`) forces UIKit to ask for the orientation every time another tab has been selected. This has been done by presenting and dismissing a fake modal view controller (this hasn't been done directly by `IndividuallyRotatingTabBarController` since the calling event handler `_tabBarItemClicked:` is no public API).
 
     - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
     {
