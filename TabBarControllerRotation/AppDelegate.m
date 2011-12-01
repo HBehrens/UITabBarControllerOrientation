@@ -27,6 +27,7 @@
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[IndividuallyRotatingTabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.delegate = self;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -71,12 +72,15 @@
      */
 }
 
-/*
+
 // Optional UITabBarControllerDelegate method.
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+    // force UIKit to ask for shouldRotateToInterfaceOrientation again
+    UIViewController *vc = [[UIViewController alloc]init];
+    [viewController presentModalViewController:vc animated:NO];
+    [viewController dismissModalViewControllerAnimated:NO];
 }
-*/
 
 /*
 // Optional UITabBarControllerDelegate method.
