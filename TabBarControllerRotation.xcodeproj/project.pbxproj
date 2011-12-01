@@ -21,6 +21,7 @@
 		CBC19618148793DA00D71D8F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBC19617148793DA00D71D8F /* second@2x.png */; };
 		CBC1961B148793DA00D71D8F /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC19619148793DA00D71D8F /* FirstViewController.xib */; };
 		CBC1961E148793DA00D71D8F /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC1961C148793DA00D71D8F /* SecondViewController.xib */; };
+		CBC196261487949500D71D8F /* IndividuallyRotatingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC196251487949500D71D8F /* IndividuallyRotatingTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		CBC19617148793DA00D71D8F /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		CBC1961A148793DA00D71D8F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		CBC1961D148793DA00D71D8F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		CBC196241487949500D71D8F /* IndividuallyRotatingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndividuallyRotatingTabBarController.h; sourceTree = "<group>"; };
+		CBC196251487949500D71D8F /* IndividuallyRotatingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividuallyRotatingTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				CBC19619148793DA00D71D8F /* FirstViewController.xib */,
 				CBC1961C148793DA00D71D8F /* SecondViewController.xib */,
 				CBC19600148793D900D71D8F /* Supporting Files */,
+				CBC196241487949500D71D8F /* IndividuallyRotatingTabBarController.h */,
+				CBC196251487949500D71D8F /* IndividuallyRotatingTabBarController.m */,
 			);
 			path = TabBarControllerRotation;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				CBC1960A148793DA00D71D8F /* AppDelegate.m in Sources */,
 				CBC1960D148793DA00D71D8F /* FirstViewController.m in Sources */,
 				CBC19614148793DA00D71D8F /* SecondViewController.m in Sources */,
+				CBC196261487949500D71D8F /* IndividuallyRotatingTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

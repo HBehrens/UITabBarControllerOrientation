@@ -12,6 +12,8 @@
 
 #import "SecondViewController.h"
 
+#import "IndividuallyRotatingTabBarController.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -23,7 +25,7 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController = [[IndividuallyRotatingTabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
